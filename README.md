@@ -9,6 +9,6 @@ Detailed description.
 ![RunningCalculator](https://github.com/Clanker-1/portfolio/blob/main/images/Calc.png?raw=true)
 
 
-*[Windows]()
+*[Windows](https://github.com/Clanker-1/portfolio/blob/main/src/windows-amd64.zip)
 *[MacOS]()
 *[SourceCode]()
