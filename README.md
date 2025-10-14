@@ -6,7 +6,9 @@
 
 Detailed description.
 
-![RunningCalculator]()
+![RunningCalculator](
+)
+
 
 *[Windows]()
 *[MacOS]()
