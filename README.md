@@ -6,8 +6,7 @@
 
 Detailed description.
 
-![RunningCalculator](
-)
+![RunningCalculator](https://github.com/Clanker-1/portfolio/blob/main/images/Calc.png?raw=true)
 
 
 *[Windows]()
