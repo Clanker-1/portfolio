@@ -53,6 +53,233 @@ void draw() {
   updateDisplay();
 }
 
+void keyPressed() {
+  println("Key:" + key);
+  println("KeyCode:" + keyCode);
+  if (keyCode == 61 || keyCode == 107) {
+    dVal = "0.0";
+    left = false;
+    op = "+";
+  } else if (keyCode == 45 || keyCode == 109) {
+    dVal = "0.0";
+    left = false;
+    op = "-";
+  } else if (keyCode == 106) {
+    dVal = "0.0";
+    left = false;
+    op = "*";
+  } else if (keyCode == 47 || keyCode == 111) {
+    dVal = "0.0";
+    left = false;
+    op = "÷";
+  } else if (keyCode == 10) {
+    dVal = "0.0";
+    left = false;
+    op = "=";
+  } else if (keyCode == 96 || keyCode == 48) {
+    if (dVal.length()<19) {
+      if (left == true) {
+        if (dVal.equals("0.0")) {
+          dVal = "0";
+          l=float(dVal);
+        } else {
+          dVal += "0";
+          l=float(dVal);
+        }
+      } else if (!left) {
+        if (dVal.equals("0.0")) {
+          dVal = "0";
+          r = float(dVal);
+        } else {
+          dVal += "0";
+          r = float(dVal);
+        }
+      }
+    }
+  } else if (keyCode == 49 || keyCode == 97) {
+    if (dVal.length()<19) {
+      if (left == true) {
+        if (dVal.equals("0.0")) {
+          dVal = "1";
+          l=float(dVal);
+        } else {
+          dVal += "1";
+          l=float(dVal);
+        }
+      } else if (!left) {
+        if (dVal.equals("0.0")) {
+          dVal = "1";
+          r = float(dVal);
+        } else {
+          dVal += "1";
+          r = float(dVal);
+        }
+      }
+    }
+  } else if (keyCode == 98 || keyCode == 50) {
+    if (dVal.length()<19) {
+      if (left == true) {
+        if (dVal.equals("0.0")) {
+          dVal = "2";
+          l=float(dVal);
+        } else {
+          dVal += "2";
+          l=float(dVal);
+        }
+      } else if (!left) {
+        if (dVal.equals("0.0")) {
+          dVal = "2";
+          r = float(dVal);
+        } else {
+          dVal += "2";
+          r = float(dVal);
+        }
+      }
+    }
+  } else if (keyCode == 99 || keyCode == 51) {
+    if (dVal.length()<19) {
+      if (left == true) {
+        if (dVal.equals("0.0")) {
+          dVal = "3";
+          l=float(dVal);
+        } else {
+          dVal += "3";
+          l=float(dVal);
+        }
+      } else if (!left) {
+        if (dVal.equals("0.0")) {
+          dVal = "3";
+          r = float(dVal);
+        } else {
+          dVal += "3";
+          r = float(dVal);
+        }
+      }
+    }
+  } else if (keyCode == 100 || keyCode == 52) {
+    if (dVal.length()<19) {
+      if (left == true) {
+        if (dVal.equals("0.0")) {
+          dVal = "4";
+          l=float(dVal);
+        } else {
+          dVal += "4";
+          l=float(dVal);
+        }
+      } else if (!left) {
+        if (dVal.equals("0.0")) {
+          dVal = "4";
+          r = float(dVal);
+        } else {
+          dVal += "4";
+          r = float(dVal);
+        }
+      }
+    }
+  } else if (keyCode == 101 || keyCode == 53) {
+    if (dVal.length()<19) {
+      if (left == true) {
+        if (dVal.equals("0.0")) {
+          dVal = "5";
+          l=float(dVal);
+        } else {
+          dVal += "5";
+          l=float(dVal);
+        }
+      } else if (!left) {
+        if (dVal.equals("0.0")) {
+          dVal = "5";
+          r = float(dVal);
+        } else {
+          dVal += "5";
+          r = float(dVal);
+        }
+      }
+    }
+  } else if (keyCode == 102 || keyCode == 54) {
+    if (dVal.length()<19) {
+      if (left == true) {
+        if (dVal.equals("0.0")) {
+          dVal = "6";
+          l=float(dVal);
+        } else {
+          dVal += "6";
+          l=float(dVal);
+        }
+      } else if (!left) {
+        if (dVal.equals("0.0")) {
+          dVal = "6";
+          r = float(dVal);
+        } else {
+          dVal += "6";
+          r = float(dVal);
+        }
+      }
+    }
+  } else if (keyCode == 103 || keyCode == 55) {
+    if (dVal.length()<19) {
+      if (left == true) {
+        if (dVal.equals("0.0")) {
+          dVal = "7";
+          l=float(dVal);
+        } else {
+          dVal += "7";
+          l=float(dVal);
+        }
+      } else if (!left) {
+        if (dVal.equals("0.0")) {
+          dVal = "7";
+          r = float(dVal);
+        } else {
+          dVal += "7";
+          r = float(dVal);
+        }
+      }
+    }
+  } else if (keyCode == 104 || keyCode == 56) {
+    if (dVal.length()<19) {
+      if (left == true) {
+        if (dVal.equals("0.0")) {
+          dVal = "8";
+          l=float(dVal);
+        } else {
+          dVal += "8";
+          l=float(dVal);
+        }
+      } else if (!left) {
+        if (dVal.equals("0.0")) {
+          dVal = "8";
+          r = float(dVal);
+        } else {
+          dVal += "8";
+          r = float(dVal);
+        }
+      }
+    }
+  } else if (keyCode == 105 || keyCode == 57) {
+    if (dVal.length()<19) {
+      if (left == true) {
+        if (dVal.equals("0.0")) {
+          dVal = "9";
+          l=float(dVal);
+        } else {
+          dVal += "9";
+          l=float(dVal);
+        }
+      } else if (!left) {
+        if (dVal.equals("0.0")) {
+          dVal = "9";
+          r = float(dVal);
+        } else {
+          dVal += "9";
+          r = float(dVal);
+        }
+      }
+    }
+  }
+}
+
+
 void mousePressed() {
   for (int i = 0; i<buttons.length; i++) {
     if (buttons [i].over && buttons[i].val.equals("+")) {
@@ -81,44 +308,52 @@ void mousePressed() {
         l = sqrt(r);
         dVal = str(r);
       }
-      } else if (buttons [i].over && buttons [i].val == "%") {
-        if (left) {
-          l = l*0.01;
-          dVal = str(l);
-        } else if (!left) {
-          l = r*0.01;
-          dVal = str(r);
-        }
-      } else if (buttons [i].over && buttons [i].val == "-") {
-        dVal = "0.0";
-        left = false;
-        op = "-";
-      } else if (buttons [i].over && buttons [i].val == "*") {
-        dVal = "0.0";
-        left = false;
-        op = "*";
-      } else if (buttons [i].over && buttons [i].val == "÷") {
-        dVal = "0.0";
-        left = false;
-        op = "÷";
-      } else if (buttons [i].over && buttons [i].val == "C") {
-        l = 0.0;
-        r = 0.0;
-        result = 0.0;
-        dVal = "0.0";
-        op = "-";
-        left = true;
-      } else if (buttons [i].over && buttons [i].val == "^") {
-        dVal = "0.0";
-        left = false;
-        op = "^";
+    } else if (buttons [i].over && buttons [i].val == "%") {
+      if (left) {
+        l = l*0.01;
+        dVal = str(l);
+      } else if (!left) {
+        l = r*0.01;
+        dVal = str(r);
       }
+    } else if (buttons [i].over && buttons [i].val == "π") {
+      if (left) {
+        l = PI;
+        dVal = str(l);
+      } else if (!left) {
+        l = PI;
+        dVal = str(r);
+      }
+    } else if (buttons [i].over && buttons [i].val == "-") {
+      dVal = "0.0";
+      left = false;
+      op = "-";
+    } else if (buttons [i].over && buttons [i].val == "*") {
+      dVal = "0.0";
+      left = false;
+      op = "*";
+    } else if (buttons [i].over && buttons [i].val == "÷") {
+      dVal = "0.0";
+      left = false;
+      op = "÷";
+    } else if (buttons [i].over && buttons [i].val == "C") {
+      l = 0.0;
+      r = 0.0;
+      result = 0.0;
+      dVal = "0.0";
+      op = "-";
+      left = true;
+    } else if (buttons [i].over && buttons [i].val == "^") {
+      dVal = "0.0";
+      left = false;
+      op = "^";
     }
+  }
 
 
-    // dVal = "Pressed";
-    for (int i = 0; i<numButtons.length; i++) {
-      if (dVal.length()<26) {
+  // dVal = "Pressed";
+  for (int i = 0; i<numButtons.length; i++) {
+    if (dVal.length()<26) {
       if (numButtons[i].over && left) {
         if (dVal.equals("0.0")) {
           dVal = (numButtons[i].val);
@@ -146,29 +381,29 @@ void mousePressed() {
 }
 
 
-  void updateDisplay() {
-    fill(255);
-    rect(10, 10, 340, 240, 15);
-    fill(0);
-    textSize(35);
-    textAlign(RIGHT);
-    if (dVal.length()>18) {
-      textSize(25);
-    } 
-    text(dVal, width-20, width-120);
+void updateDisplay() {
+  fill(255);
+  rect(10, 10, 340, 240, 15);
+  fill(0);
+  textSize(35);
+  textAlign(RIGHT);
+  if (dVal.length()>18) {
+    textSize(25);
   }
+  text(dVal, width-20, width-120);
+}
 
-  void performCalculation() {
-    if (op.equals("+")) {
-      result = l + r;
-    } else if (op.equals("*")) {
-      result = l * r;
-    } else if (op.equals("-")) {
-      result = l - r;
-    } else if (op.equals("÷")) {
-      result = l / r;
-    } else if (op.equals("^")) {
-      result = pow(l, r);
-    }
-    dVal = str(result);
+void performCalculation() {
+  if (op.equals("+")) {
+    result = l + r;
+  } else if (op.equals("*")) {
+    result = l * r;
+  } else if (op.equals("-")) {
+    result = l - r;
+  } else if (op.equals("÷")) {
+    result = l / r;
+  } else if (op.equals("^")) {
+    result = pow(l, r);
   }
+  dVal = str(result);
+}
